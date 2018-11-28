@@ -1,0 +1,363 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:15px;
+    line-height:1.5;
+    padding:0;
+    margin:0;
+     
+}
+
+header#intro{
+    color:black;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    text-align:center;
+
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(arendal1.jpg);
+    z-index:0;
+    overflow: hidden;
+}
+
+header {
+    color: #ffffff;
+    padding-top:0px;
+    min-height:0px;
+    border-bottom:black 2px solid;
+    width:100%;
+    top:0;
+    display:block;
+
+    height: 90vh;
+}
+
+
+nav .navbar #tittel img {
+    float:right;
+    background-color: rgb(24, 161, 204);
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size:17px;
+    background-color: rgb(24, 161, 204);
+    position:sticky;
+    position: -webkit-sticky;
+    
+}
+
+ul li {
+    font-size: 18px;
+    
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    height: 2rem;
+}
+
+li a:hover:not(#active) {
+    background-color: #e91e63;
+    font-size: 20px;
+    color:white;
+    
+}
+
+#active {
+    background-color: #ffffff !important;
+    color: rgb(24, 161, 204);
+}
+
+ul li ul li {
+    display: none;
+}
+
+ul li:hover ul li {
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: rgb(24, 161, 204);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border:black 2px solid;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+
+#boxes:after { 
+    content: "";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+  }
+
+#hihi {
+    color:#ffffff;
+    padding-top:100px;
+    font-size: 20px;
+}
+
+#hoho {
+    justify-content: center;
+    min-height:400px;
+    background:url("arendal1.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align:center;
+    padding-top:700px;
+    
+}
+
+
+a {
+    color:inherit;
+    text-decoration:none;
+}
+
+/*boxes*/
+
+#boxes{
+    margin-top:20px;
+}
+
+#boxes .box{
+    float:left;
+    text-align:center;
+    width:30%;
+    padding:15px;
+}
+
+/* TRENGS IKKE?
+.bokser:after {
+    content: "";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+*/ 
+
+/*gjøre bildene/boxene smalere*/
+#boxes .box img{
+    height:125px;
+    width: auto;
+    position: initial;
+    
+}
+
+#outro {
+    padding: 20px;
+    color:#ffffff;
+    background-color:rgb(24, 161, 204);
+    text-align: center;
+}
+
+
+
+.container {
+    position:relative;
+}
+.container img {
+    position:absolute;
+    width:500px;
+    height:300px
+}
+@-webkit-keyframes xfade {
+    0% {
+        opacity: 1;
+    }
+    12.5% {
+        opacity:1;
+    }
+    16.5% {
+        opacity:0;
+    }
+    96% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@keyframes xfade {
+    0% {
+        opacity: 1;
+    }
+    12.5% {
+        opacity:1;
+    }
+    16.5% {
+        opacity:0;
+    }
+    96% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+
+/*Bilde-slide-show*/
+
+}
+.container img:nth-child(8) {
+    -webkit-animation: xfade 120s 0s infinite;
+    animation: xfade 120s 0s infinite;
+}
+.container img:nth-child(7) {
+    -webkit-animation: xfade 120s 15s infinite;
+    animation: xfade 120s 15s infinite;
+}
+.container img:nth-child(6) {
+    -webkit-animation: xfade 120s 30s infinite;
+    animation: xfade 120s 30s infinite;
+}
+.container img:nth-child(5) {
+    -webkit-animation: xfade 120s 45s infinite;
+    animation: xfade 120s 45s infinite;
+}
+.container img:nth-child(4) {
+    -webkit-animation: xfade 120s 60s infinite;
+    animation: xfade 120s 60s infinite;
+}
+.container img:nth-child(3) {
+    -webkit-animation: xfade 120s 75s infinite;
+    animation: xfade 120s 75s infinite;
+}
+.container img:nth-child(2) {
+    -webkit-animation: xfade 120s 90s infinite;
+    animation: xfade 120s 90s infinite;
+}
+.container img:nth-child(1) {
+    -webkit-animation: xfade 120s 105s infinite;
+    animation: xfade 120s 105s infinite;
+}
+
+/*Fancy dropdown*/
+
+#menuBtn {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 25%;
+    float: right;
+}
+
+
+.dropdown1 {
+    position:relative;
+    display:inline-block;
+}
+
+.dropbtn {
+    background-color: #4C3C5D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.dropdown-content1 {
+    display:none;
+    position:absolute;
+    background-color:#f9f9f9;
+    right:0;
+    min-width:160px;
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,2);
+    z-index:2;
+}
+
+.dropdown-content1 a { 
+    color:black;
+    padding:12px 16px;
+    text-decoration:none;
+    display:block;
+}
+
+.dropdown-content1 a:hover {
+    background-color: #111111;
+}
+
+.dropdown:hover .dropdown-content1 {
+    display:block;
+}
+
+.dropdown:hover  .dropbtn {
+    background-color: #725a8c;
+}
+
+
+nav.navbar{
+    position: sticky;
+    top: 0;
+    height: 10vh;
+    background: rgb(24, 161, 204);
+    border-bottom:black solid 2px;
+}
+
+nav.navbar div {
+    display: inline-block;
+    height: 10vh;
+}
+
+nav.navbar div * {
+    background-color: transparent;
+    height: 10vh;
+}
+
+nav.navbar .nav {
+    width:40vw;
+}
+
+nav.navbar #tittel {
+    width:20vw;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav.navbar .end {
+    width: 40vw;
+}
+
+/* Flagg */ 
+
+.flagg {
+    width: 110%;
+    height: 110%;
+   
+}
+
+#flaggliste{
+    list-style-type: none;
+}
